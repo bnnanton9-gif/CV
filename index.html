@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anton Riyadi, S.Ak — Career Portfolio</title>
+<meta name="description" content="Anton Riyadi, S.Ak — Sarjana Akuntansi Universitas Jenderal Achmad Yani Yogyakarta dengan pengalaman akuntansi, perpajakan, layanan pelanggan, dan organisasi.">
+<meta name="keywords" content="Anton Riyadi, Akuntansi, Accounting, Pajak, S.Ak, Universitas Jenderal Achmad Yani, Yogyakarta, KSBI, Brevet Pajak">
+<meta name="author" content="Anton Riyadi, S.Ak">
+<meta property="og:title" content="Anton Riyadi, S.Ak — Career Portfolio">
+<meta property="og:description" content="Sarjana Akuntansi Universitas Jenderal Achmad Yani Yogyakarta dengan sertifikasi perpajakan, pengalaman akuntansi, dan pengalaman organisasi.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--navy:#102a43;--navy-light:#1f4e5f;--navy-mid:#163b50;
+--gold:#b98b3d;--gold-light:#d5ad63;--gold-dim:#8e682c;
+--teal:#2f7f82;--teal-light:#dceff0;
+--white:#ffffff;--off-white:#f5f7f8;--gray-50:#eef3f4;--gray-100:#e7edef;--gray-200:#d5e0e4;
+--gray-300:#c8ccd4;--gray-400:#9aa0ad;--gray-500:#6b7280;--gray-600:#4b5563;
+--gray-700:#374151;--gray-800:#1f2937;
+--shadow-sm:0 1px 3px rgba(0,0,0,.08);--shadow-md:0 4px 12px rgba(0,0,0,.1);
+--shadow-lg:0 8px 30px rgba(0,0,0,.12);--shadow-xl:0 20px 60px rgba(0,0,0,.15);
+--radius:8px;--radius-sm:5px;--radius-lg:10px;
+--transition:all .3s cubic-bezier(.4,0,.2,1);
+--font:Georgia,'Times New Roman',serif;--font-sans:'Trebuchet MS',Arial,sans-serif;
+}
+[data-theme="dark"]{
+--navy:#0a0f1a;--navy-light:#121829;--navy-mid:#0e1420;
+--white:#e8eaef;--off-white:#1a1f2e;--gray-50:#141925;--gray-100:#1e2436;
+--gray-200:#2a3148;--gray-300:#3d4560;--gray-400:#5a6480;--gray-500:#7a8299;
+--gray-600:#9aa2b5;--gray-700:#bfc5d3;--gray-800:#dde1ea;
+--shadow-sm:0 1px 3px rgba(0,0,0,.3);--shadow-md:0 4px 12px rgba(0,0,0,.35);
+--shadow-lg:0 8px 30px rgba(0,0,0,.4);--shadow-xl:0 20px 60px rgba(0,0,0,.5);
+}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--font-sans);background:var(--off-white);color:var(--gray-700);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--gold);color:var(--navy)}
+
+/* Scroll Progress */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));z-index:1001;transition:width .15s ease-out;width:0}
+
+/* Navbar */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(16,42,67,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(213,173,99,.2);transition:var(--transition)}
+.navbar.scrolled{background:rgba(16,42,67,.98);box-shadow:0 2px 20px rgba(16,42,67,.28)}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:72px}
+.nav-brand{font-size:1.1rem;font-weight:700;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:.6rem;letter-spacing:-.02em}
+.nav-brand img{width:34px;height:34px;object-fit:cover;object-position:center 18%;border-radius:50%;border:2px solid var(--gold-light);box-shadow:0 2px 10px rgba(0,0,0,.22)}
+.nav-links{display:flex;list-style:none;gap:0;align-items:center}
+.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.82rem;font-weight:500;padding:.5rem 1rem;border-radius:6px;transition:var(--transition);position:relative;letter-spacing:.01em}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-links a.active::after{content:'';position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);width:20px;height:2px;background:var(--gold);border-radius:1px}
+.theme-toggle{background:none;border:1px solid rgba(200,168,78,.3);color:var(--gold);width:38px;height:38px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.05rem;transition:var(--transition);margin-left:.5rem}
+.theme-toggle:hover{background:rgba(200,168,78,.15);border-color:var(--gold)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;transition:var(--transition)}
+.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(15,27,45,.98);backdrop-filter:blur(20px);padding:1.5rem 2rem;border-bottom:1px solid rgba(200,168,78,.15)}
+.mobile-menu.show{display:block}
+.mobile-menu a{display:block;color:rgba(255,255,255,.8);text-decoration:none;padding:.75rem 0;font-size:.95rem;border-bottom:1px solid rgba(255,255,255,.06);transition:var(--transition)}
+.mobile-menu a:last-child{border:none}
+.mobile-menu a:hover,.mobile-menu a.active{color:var(--gold)}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 2rem 4rem}
+.hero-slider{position:absolute;inset:0;overflow:hidden}
+.hero-slide{position:absolute;inset:0;opacity:0;transform:translateX(-40px);transition:opacity 1.5s cubic-bezier(0.4,0,0.2,1), transform 1.5s cubic-bezier(0.4,0,0.2,1);background-size:cover;background-position:center 25%;background-repeat:no-repeat;filter:saturate(0.92) contrast(1.08) brightness(0.95)}
+.hero-slide.active{opacity:1;transform:translateX(0)}
+.hero-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(16,42,67,.97) 0%,rgba(22,59,80,.91) 48%,rgba(47,127,130,.48) 100%),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:auto,42px 42px,42px 42px;mix-blend-mode:multiply}
+.hero-dots{position:absolute;left:50%;bottom:1.5rem;transform:translateX(-50%);display:flex;gap:.55rem;z-index:2}
+.hero-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.42);border:none;cursor:pointer;transition:var(--transition)}
+.hero-dot.active{background:var(--gold);transform:scale(1.15)}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.hero-content{flex:1 1 620px;max-width:620px}
+.hero-photo{flex:0 0 380px;display:flex;justify-content:flex-end;align-items:center;position:relative;z-index:1}
+.portrait-frame{position:relative;display:flex;align-items:center;justify-content:center;padding:18px;border-radius:50%;background:linear-gradient(135deg,rgba(200,168,78,.35),rgba(255,255,255,.06));box-shadow:0 20px 60px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.12)}
+.portrait-frame::before{content:'';position:absolute;inset:-14px;border:1px solid rgba(200,168,78,.28);border-radius:50%}
+.hero-photo img{width:310px;height:310px;object-fit:cover;object-position:center 18%;border-radius:50%;border:4px solid var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.3);transition:var(--transition);display:block}
+.hero-photo img:hover{transform:scale(1.02)}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(47,127,130,.2);border:1.5px solid rgba(213,173,99,.45);color:var(--gold-light);padding:.5rem 1.25rem;border-radius:4px;font-size:.78rem;font-weight:700;margin-bottom:1.5rem;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(10px)}
+.hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:var(--font);font-size:clamp(2.5rem,5vw,4.2rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:.75rem;letter-spacing:-.02em;text-shadow:0 2px 20px rgba(0,0,0,.4)}
+.hero h1 .accent{color:var(--gold);position:relative}
+.hero .subtitle{font-size:clamp(1rem,2vw,1.35rem);color:rgba(255,255,255,.88);font-weight:400;margin-bottom:1rem;max-width:600px;text-shadow:0 1px 10px rgba(0,0,0,.3)}
+.hero .hero-desc{font-size:1rem;color:rgba(255,255,255,.80);max-width:620px;margin-bottom:2.5rem;line-height:1.8;text-shadow:0 1px 8px rgba(0,0,0,.2)}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:var(--radius-sm);font-size:.85rem;font-weight:700;text-decoration:none;transition:var(--transition);cursor:pointer;border:none;font-family:var(--font-sans);letter-spacing:.02em;box-shadow:0 10px 25px rgba(3,7,18,.18)}
+.btn-primary{background:var(--gold);color:var(--navy)}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 30px rgba(200,168,78,.28)}
+.btn-outline{background:rgba(255,255,255,.04);color:var(--white);border:1.5px solid rgba(255,255,255,.2)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:3rem;margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid rgba(213,173,99,.28)}
+.hero-stat{text-align:left}
+.hero-stat .num{font-family:var(--font);font-size:2rem;font-weight:900;color:var(--gold-light);letter-spacing:-.02em;text-shadow:0 2px 10px rgba(0,0,0,.2)}
+.hero-stat .label{font-size:.78rem;color:rgba(255,255,255,.45);margin-top:.15rem;text-transform:uppercase;letter-spacing:.05em;font-weight:500}
+
+/* Sections */
+section{padding:5rem 2rem}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:3.5rem}
+.section-label{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--gold-dim);margin-bottom:.75rem;padding:.35rem .8rem;background:var(--teal-light);border-left:3px solid var(--gold);border-radius:2px}
+.section-title{font-family:var(--font);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:var(--navy);letter-spacing:-.02em;line-height:1.2}
+[data-theme="dark"] .section-title{color:var(--gray-800)}
+.section-subtitle{color:var(--gray-500);margin-top:.75rem;font-size:1rem;max-width:550px;margin-left:auto;margin-right:auto}
+
+/* About */
+.about-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.about-card{background:linear-gradient(180deg,var(--white) 0%,rgba(47,127,130,.035) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:2rem;transition:var(--transition);position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(16,42,67,.05)}
+.about-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(200,168,78,.2)}
+.about-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:var(--transition);transform-origin:left}
+.about-card:hover::before{transform:scaleX(1)}
+.about-icon{width:52px;height:52px;background:rgba(200,168,78,.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1.25rem;border:1px solid rgba(200,168,78,.12)}
+.about-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;letter-spacing:-.01em}
+[data-theme="dark"] .about-card h3{color:var(--gray-800)}
+.about-card p{font-size:.88rem;color:var(--gray-500);line-height:1.7}
+.about-card ul{list-style:none;margin-top:.75rem}
+.about-card ul li{font-size:.85rem;color:var(--gray-600);padding:.35rem 0;padding-left:1.2rem;position:relative}
+.about-card ul li::before{content:'';position:absolute;left:0;top:.7rem;width:5px;height:5px;background:var(--gold);border-radius:50%}
+
+/* Skills */
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.skill-group{background:linear-gradient(180deg,var(--white) 0%,rgba(47,127,130,.025) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.75rem;transition:var(--transition);box-shadow:0 8px 24px rgba(16,42,67,.04)}
+.skill-group:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.15);transform:translateY(-2px)}
+.skill-group h3{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;letter-spacing:-.01em}
+[data-theme="dark"] .skill-group h3{color:var(--gray-800)}
+.skill-group h3 .icon{width:30px;height:30px;background:rgba(200,168,78,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.8rem;border:1px solid rgba(200,168,78,.12)}
+.skill-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.skill-tag{background:var(--gray-100);color:var(--gray-600);padding:.45rem .9rem;border-radius:6px;font-size:.78rem;font-weight:500;border:1px solid var(--gray-200);transition:var(--transition)}
+.skill-tag:hover{background:rgba(200,168,78,.1);border-color:rgba(200,168,78,.3);color:var(--gold-dim);transform:translateY(-1px)}
+
+/* Timeline */
+.timeline{position:relative;padding-left:2.5rem}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--gold),var(--gray-300))}
+.timeline-item{position:relative;padding-bottom:2.5rem}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-dot{position:absolute;left:-2.5rem;top:6px;width:16px;height:16px;border-radius:50%;background:var(--white);border:3px solid var(--gold);z-index:1;transition:var(--transition)}
+.timeline-item:first-child .timeline-dot{background:var(--gold);box-shadow:0 0 0 4px rgba(200,168,78,.2)}
+.timeline-card{background:linear-gradient(180deg,var(--white) 0%,rgba(47,127,130,.025) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.5rem;transition:var(--transition);box-shadow:0 10px 24px rgba(16,42,67,.04)}
+.timeline-card:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.2);transform:translateY(-2px)}
+.timeline-date{font-size:.75rem;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.35rem}
+.timeline-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);letter-spacing:-.01em}
+[data-theme="dark"] .timeline-card h3{color:var(--gray-800)}
+.timeline-card .org{font-size:.85rem;color:var(--gray-500);margin-bottom:.3rem}
+.timeline-card .detail{font-size:.82rem;color:var(--gray-400);margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--gray-100)}
+.experience-proof{display:inline-flex;align-items:center;gap:.35rem;margin-top:1rem;padding:.45rem .75rem;border:1px solid rgba(47,127,130,.35);border-radius:var(--radius-sm);color:var(--teal);font-family:var(--font-sans);font-size:.75rem;font-weight:700;text-decoration:none;transition:var(--transition)}
+.experience-proof:hover{background:var(--teal-light);border-color:var(--teal);transform:translateY(-1px)}
+
+/* Certifications */
+.cert-filter{display:flex;justify-content:center;gap:.5rem;margin-bottom:2.5rem;flex-wrap:wrap}
+.cert-filter-btn{background:var(--white);border:1.5px solid var(--gray-200);color:var(--gray-500);padding:.5rem 1.25rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;transition:var(--transition);font-family:var(--font)}
+.cert-filter-btn:hover{border-color:var(--gold);color:var(--gold)}
+.cert-filter-btn.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.cert-card{background:linear-gradient(180deg,var(--white) 0%,rgba(200,168,78,.015) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.75rem;transition:var(--transition);position:relative;overflow:hidden;box-shadow:0 10px 28px rgba(15,27,45,.02)}
+.cert-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);opacity:0;transition:var(--transition)}
+.cert-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.cert-card:hover::after{opacity:1}
+.cert-card .cert-badge{display:inline-block;background:rgba(200,168,78,.1);color:var(--gold-dim);padding:.2rem .7rem;border-radius:50px;font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
+.cert-card h3{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:.3rem;letter-spacing:-.01em}
+[data-theme="dark"] .cert-card h3{color:var(--gray-800)}
+.cert-card .cert-institution{font-size:.88rem;color:var(--gray-500);margin-bottom:.75rem}
+.cert-card .cert-details{display:flex;flex-direction:column;gap:.35rem}
+.cert-card .cert-detail{font-size:.8rem;color:var(--gray-400);display:flex;align-items:flex-start;gap:.4rem}
+.cert-card .cert-detail strong{color:var(--gray-600);min-width:80px;font-weight:600}
+.cert-card .cert-subjects{margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--gray-100)}
+.cert-card .cert-subjects h4{font-size:.75rem;font-weight:600;color:var(--gray-500);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem}
+.cert-subject-tags{display:flex;flex-wrap:wrap;gap:.35rem}
+.cert-subject-tag{background:var(--gray-100);color:var(--gray-600);padding:.2rem .55rem;border-radius:4px;font-size:.7rem;font-weight:500}
+
+/* Org Section */
+.org-timeline{display:grid;grid-template-columns:1fr;gap:1rem}
+.org-item{display:flex;gap:1.25rem;align-items:flex-start;background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.25rem 1.5rem;transition:var(--transition)}
+.org-item:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.2)}
+.org-item.chairman{border-left:3px solid var(--gold);background:linear-gradient(135deg,var(--white) 0%,rgba(200,168,78,.03) 100%)}
+.org-year{min-width:60px;font-size:.78rem;font-weight:700;color:var(--gold);padding-top:.15rem}
+.org-content h4{font-size:.95rem;font-weight:700;color:var(--navy);letter-spacing:-.01em}
+[data-theme="dark"] .org-content h4{color:var(--gray-800)}
+.org-content p{font-size:.82rem;color:var(--gray-500);margin-top:.15rem}
+.org-content .role-tag{display:inline-block;background:rgba(200,168,78,.12);color:var(--gold-dim);padding:.15rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.04em}
+
+/* Achievements */
+.achievements-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.achievement-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.5rem;transition:var(--transition)}
+.achievement-card:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.2);transform:translateY(-2px)}
+.achievement-card .ach-icon{font-size:1.5rem;margin-bottom:.75rem}
+.achievement-card h4{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.35rem}
+[data-theme="dark"] .achievement-card h4{color:var(--gray-800)}
+.achievement-card p{font-size:.82rem;color:var(--gray-500);line-height:1.6}
+
+/* Career Target */
+.career-target{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-mid) 50%,var(--navy-light) 100%);border-radius:var(--radius-lg);padding:3.5rem;position:relative;overflow:hidden}
+.career-target::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(200,168,78,.08) 0%,transparent 70%);border-radius:50%}
+.career-target h2{color:var(--white);font-size:1.8rem;font-weight:800;margin-bottom:.5rem;letter-spacing:-.02em}
+.career-target .subtitle{color:rgba(255,255,255,.5);margin-bottom:2rem;font-size:.95rem}
+.career-goals{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.goal-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:1.5rem;transition:var(--transition)}
+.goal-card:hover{background:rgba(200,168,78,.08);border-color:rgba(200,168,78,.25)}
+.goal-card .goal-icon{font-size:1.3rem;margin-bottom:.75rem}
+.goal-card h4{color:var(--white);font-size:.9rem;font-weight:700;margin-bottom:.3rem}
+.goal-card p{color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.6}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.contact-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.5rem;display:flex;align-items:center;gap:1rem;transition:var(--transition)}
+.contact-card:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.2);transform:translateY(-2px)}
+.contact-icon{width:48px;height:48px;background:rgba(200,168,78,.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.contact-card h4{font-size:.85rem;font-weight:600;color:var(--gray-600)}
+.contact-card p{font-size:.88rem;color:var(--navy);font-weight:600;margin-top:.1rem;overflow-wrap:anywhere}
+.contact-card a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(47,127,130,.35);transition:var(--transition)}
+.contact-card a:hover{color:var(--teal);border-color:var(--teal)}
+[data-theme="dark"] .contact-card p{color:var(--gray-800)}
+.contact-card .unavailable{color:var(--gray-400);font-weight:400;font-style:italic;font-size:.82rem}
+
+/* Footer */
+footer{background:var(--navy);padding:3rem 2rem;text-align:center}
+footer p{color:rgba(255,255,255,.35);font-size:.8rem}
+footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1rem;border-radius:1px}
+
+/* Back to Top */
+.back-to-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--gold);color:var(--navy);border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);transition:var(--transition);opacity:0;visibility:hidden;transform:translateY(10px);z-index:999}
+.back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-to-top:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(200,168,78,.35)}
+
+/* Scroll Reveal */
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
+
+/* Responsive */
+@media(max-width:1024px){
+  .about-cards,.skills-grid,.cert-grid,.achievements-grid,.career-goals{grid-template-columns:repeat(2,1fr)}
+  .hero-stats{gap:2rem}
+}
+@media(max-width:768px){
+  html{scroll-padding-top:72px}
+  body{min-width:320px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .nav-inner{height:64px;padding:0 1.25rem}
+  .mobile-menu{top:64px;padding:1rem 1.25rem;z-index:1001}
+  .nav-brand{font-size:1rem}
+  .nav-brand img{width:32px;height:32px}
+  .about-cards,.skills-grid,.cert-grid,.achievements-grid,.career-goals,.contact-grid{grid-template-columns:1fr}
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .hero-content{width:100%}
+  .hero-photo{width:100%;justify-content:center;order:-1;flex-basis:auto}
+  .hero-photo img{width:220px;height:220px}
+  .hero h1{font-size:2.2rem}
+  .hero{min-height:auto;padding-top:6rem}
+  .hero .hero-desc{font-size:.92rem}
+  .hero-stats{flex-wrap:wrap;gap:1.5rem}
+  .hero-stat .num{font-size:1.5rem}
+  .career-target{padding:2rem 1.5rem}
+  section{padding:3.5rem 1.5rem}
+  .section-header{margin-bottom:2.25rem}
+  .section-subtitle{font-size:.9rem}
+  .timeline{padding-left:1.75rem}
+  .timeline-dot{left:-1.75rem}
+  .timeline-card,.cert-card,.achievement-card,.about-card,.skill-group{padding:1.25rem}
+  .org-item{gap:.6rem;padding:1rem}
+  .org-year{min-width:0;font-size:.7rem}
+  .contact-card{align-items:flex-start;padding:1.15rem}
+}
+@media(max-width:480px){
+  .nav-inner{padding:0 1rem}
+  .hero{padding:5rem 1.25rem 3rem}
+  .hero h1{font-size:1.8rem}
+  .hero-actions{flex-direction:column}
+  .btn{width:100%;justify-content:center}
+  .hero-photo img{width:190px;height:190px}
+  .hero-badge{font-size:.68rem;padding:.45rem .75rem}
+  .hero-stats{display:grid;grid-template-columns:1fr 1fr;width:100%;gap:1rem}
+  .hero-stat .label{font-size:.68rem}
+  .hero-stat .num{font-size:1.35rem}
+  .experience-proof{max-width:100%;white-space:normal}
+  .cert-card .cert-detail{font-size:.75rem;flex-wrap:wrap}
+  .contact-card p{font-size:.78rem}
+  .cert-filter{gap:.35rem}
+  .cert-filter-btn{padding:.4rem .9rem;font-size:.75rem}
+  .hero-stats{flex-direction:column;gap:1rem}
+}
+@media(max-width:375px){
+  .hero h1{font-size:1.55rem}
+  .section-title{font-size:1.5rem}
+}
+@media print{
+  .navbar,.back-to-top,.scroll-progress,.hamburger,.mobile-menu,.theme-toggle,.hero-actions{display:none!important}
+  .hero{min-height:auto;padding:2rem;background:var(--white);color:var(--navy)}
+  .hero h1{color:var(--navy);font-size:1.5rem}
+  .hero .subtitle,.hero .hero-desc{color:var(--gray-600)}
+  .hero .hero-badge{background:none;border:none;padding:0;color:var(--gray-500);font-size:.8rem}
+  .hero-badge::before{display:none}
+  .hero-stats{border-top:none;padding:0;margin:1rem 0 0}
+  .hero-stat .num{color:var(--navy)}
+  .hero-stat .label{color:var(--gray-500)}
+  body{background:var(--white);font-size:10pt}
+  section{padding:1rem 0}
+  .section-header{margin-bottom:1.5rem}
+  .about-cards,.skills-grid,.cert-grid,.achievements-grid,.career-goals,.contact-grid{grid-template-columns:1fr 1fr;gap:.75rem}
+  .about-card,.skill-group,.cert-card,.achievement-card,.goal-card,.contact-card,.timeline-card,.org-item{border:1px solid #ddd;padding:1rem;box-shadow:none;break-inside:avoid}
+  .timeline{padding-left:1.5rem}
+  .career-target{background:var(--white);border:1px solid #ddd;padding:1.5rem}
+  .career-target h2,.goal-card h4{color:var(--navy)}
+  .goal-card p{color:var(--gray-600)}
+  .goal-card{background:transparent;border:1px solid #ddd}
+  footer{background:var(--white);padding:1rem}
+  footer p{color:var(--gray-500)}
+  a[href]::after{content:" (" attr(href) ")";font-size:.7rem;color:var(--gray-400)}
+  .reveal{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand" aria-label="Anton Riyadi - Home">
+      <img src="images/222301045_FOTO_Anton%20Riyadi.jpeg" alt="Foto Anton Riyadi" width="34" height="34"> Anton Riyadi
+    </a>
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a href="#about" role="menuitem">About</a></li>
+      <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+      <li role="none"><a href="#education" role="menuitem">Education</a></li>
+      <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+      <li role="none"><a href="#certifications" role="menuitem">Certifications</a></li>
+      <li role="none"><a href="#organization" role="menuitem">Organization</a></li>
+      <li role="none"><a href="#career-target" role="menuitem">Career</a></li>
+      <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+      <li role="none"><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" role="menuitem">☀️</button></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" role="menu">
+    <a href="#about" role="menuitem">About</a>
+    <a href="#skills" role="menuitem">Skills</a>
+    <a href="#education" role="menuitem">Education</a>
+    <a href="#experience" role="menuitem">Experience</a>
+    <a href="#certifications" role="menuitem">Certifications</a>
+    <a href="#organization" role="menuitem">Organization</a>
+    <a href="#career-target" role="menuitem">Career</a>
+    <a href="#contact" role="menuitem">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-slider" aria-hidden="true">
+    <div class="hero-slide active" style="background-image:url('images/222301045_FOTO_Anton%20Riyadi.jpeg');background-position:center 18%"></div>
+    <div class="hero-slide" style="background-image:url('images/FOTO_1.jpg');background-position:center 20%"></div>
+    <div class="hero-slide" style="background-image:url('images/FOTO_2.jpeg');background-position:center 16%"></div>
+    <div class="hero-slide" style="background-image:url('images/FOTO_3.jpeg');background-position:center 22%"></div>
+    <div class="hero-slide" style="background-image:url('images/FOTO_4.jpeg');background-position:center 18%"></div>
+    <div class="hero-slide" style="background-image:url('images/FOTO_5.jpeg');background-position:center 24%"></div>
+    <div class="hero-slide" style="background-image:url('images/FOTO_6.jpeg');background-position:center 20%"></div>
+    <div class="hero-slide" style="background-image:url('images/WhatsApp%20Image%202026-09-01%20at%2006.02.20.jpeg');background-position:center 14%"></div>
+    <div class="hero-slide" style="background-image:url('images/WhatsApp%20Image%202026-09-01%20at%2006.02.21.jpeg');background-position:center 19%"></div>
+    <div class="hero-slide" style="background-image:url('images/EKSPLORASI_1.jpeg');background-position:center 35%"></div>
+    <div class="hero-slide" style="background-image:url('images/KARYAWAN_1.jpeg');background-position:center 25%"></div>
+    <div class="hero-slide" style="background-image:url('images/KSBI_1.jpeg');background-position:center 28%"></div>
+    <div class="hero-slide" style="background-image:url('images/WHATSAPP_1.jpeg');background-position:center 30%"></div>
+  </div>
+  <div class="hero-dots" aria-label="Hero slider indicators">
+    <button class="hero-dot active" aria-label="Slide 1"></button>
+    <button class="hero-dot" aria-label="Slide 2"></button>
+    <button class="hero-dot" aria-label="Slide 3"></button>
+    <button class="hero-dot" aria-label="Slide 4"></button>
+    <button class="hero-dot" aria-label="Slide 5"></button>
+    <button class="hero-dot" aria-label="Slide 6"></button>
+    <button class="hero-dot" aria-label="Slide 7"></button>
+    <button class="hero-dot" aria-label="Slide 8"></button>
+    <button class="hero-dot" aria-label="Slide 9"></button>
+    <button class="hero-dot" aria-label="Slide 10"></button>
+    <button class="hero-dot" aria-label="Slide 11"></button>
+    <button class="hero-dot" aria-label="Slide 12"></button>
+    <button class="hero-dot" aria-label="Slide 13"></button>
+  </div>
+
+  <div class="hero-inner hero-inter">
+    <div class="hero-content">
+      <div class="hero-badge reveal">🎓 Universitas Jenderal Achmad Yani Yogyakarta</div>
+      <h1 class="reveal reveal-delay-1">Anton Riyadi, <span class="accent">S.Ak</span></h1>
+      <p class="subtitle reveal reveal-delay-2">Sarjana Akuntansi (S.Ak) — Universitas Jenderal Achmad Yani Yogyakarta</p>
+      <p class="hero-desc reveal reveal-delay-3">Sarjana Akuntansi dengan sertifikasi Brevet Pajak A&amp;B dan Financial Statement Analyst. Memiliki pengalaman magang akuntansi, layanan pelanggan, pengantaran, serta kepemimpinan dan koordinasi kegiatan organisasi.</p>
+      <div class="hero-actions reveal reveal-delay-4">
+        <a href="Anton_Riyadi_CV.pdf.pdf" class="btn btn-primary" download>📄 Download CV</a>
+        <a href="javascript:window.print()" class="btn btn-outline">🖨️ Print CV</a>
+      </div>
+      <div class="hero-stats reveal reveal-delay-4">
+        <div class="hero-stat">
+          <div class="num">3</div>
+          <div class="label">Pengalaman Kerja</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">6</div>
+          <div class="label">Peran &amp; Kegiatan KSBI</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">2</div>
+          <div class="label">Sertifikasi Profesional</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">3</div>
+          <div class="label">Webinar Diikuti</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo reveal reveal-delay-2">
+      <div class="portrait-frame">
+        <img src="images/222301045_FOTO_Anton%20Riyadi.jpeg" alt="Anton Riyadi" width="300" height="300">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Profil</div>
+      <h2 class="section-title">Tentang Saya</h2>
+      <p class="section-subtitle">Gambaran umum latar belakang pendidikan, minat, dan fokus karier.</p>
+    </div>
+    <div class="about-cards">
+      <div class="about-card reveal reveal-delay-1">
+        <div class="about-icon">🎓</div>
+        <h3>Pendidikan</h3>
+        <p>Sarjana Akuntansi dari Universitas Jenderal Achmad Yani Yogyakarta.</p>
+        <ul>
+          <li>Fakultas Ekonomi dan Sosial</li>
+          <li>Program Studi Akuntansi</li>
+          <li>NPM: 222301045</li>
+        </ul>
+      </div>
+      <div class="about-card reveal reveal-delay-2">
+        <div class="about-icon">💡</div>
+        <h3>Minat Utama</h3>
+        <p>Akuntansi, perpajakan, analisis laporan keuangan, dan pengembangan bisnis UMKM.</p>
+        <ul>
+          <li>Financial Statement Analysis</li>
+          <li>Pembinaan usaha dan kewirausahaan</li>
+        </ul>
+      </div>
+      <div class="about-card reveal reveal-delay-3">
+        <div class="about-icon">🎯</div>
+        <h3>Fokus Karier</h3>
+        <p>Berkembang sebagai profesional di bidang akuntansi dan perpajakan.</p>
+        <ul>
+          <li>Akuntan profesional</li>
+          <li>Konsultan pajak</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" style="background:var(--gray-50)">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Keahlian</div>
+      <h2 class="section-title">Skills &amp; Kompetensi</h2>
+      <p class="section-subtitle">Keahlian yang dikembangkan melalui pendidikan, pengalaman kerja, dan sertifikasi.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal reveal-delay-1">
+        <h3><span class="icon">📊</span> Technical Accounting Skills</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Akuntansi Keuangan</span>
+          <span class="skill-tag">Financial Reporting</span>
+          <span class="skill-tag">Financial Statement Analysis</span>
+          <span class="skill-tag">Cost Accounting</span>
+          <span class="skill-tag">Laporan Keuangan</span>
+          <span class="skill-tag">Pembukuan</span>
+          <span class="skill-tag">Rekonsiliasi</span>
+          <span class="skill-tag">Administrasi</span>
+          <span class="skill-tag">Data Entry</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-2">
+        <h3><span class="icon">🏛️</span> Tax Compliance Skills</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">KUP</span>
+          <span class="skill-tag">PPh</span>
+          <span class="skill-tag">PPN</span>
+          <span class="skill-tag">PBB &amp; BPHTB</span>
+          <span class="skill-tag">Akuntansi Perpajakan</span>
+          <span class="skill-tag">SPT</span>
+          <span class="skill-tag">Pemeriksaan Pajak</span>
+          <span class="skill-tag">Keberatan &amp; Banding</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-3">
+        <h3><span class="icon">💻</span> Digital &amp; Technology</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Microsoft Excel</span>
+          <span class="skill-tag">Microsoft Word</span>
+          <span class="skill-tag">Microsoft PowerPoint</span>
+          <span class="skill-tag">Google Workspace</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-4">
+        <h3><span class="icon">🤝</span> Professional &amp; Soft Skills</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Teamwork</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Analytical Thinking</span>
+          <span class="skill-tag">Koordinasi Tim</span>
+          <span class="skill-tag">Manajemen Kegiatan</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Pendidikan</div>
+      <h2 class="section-title">Riwayat Pendidikan</h2>
+      <p class="section-subtitle">Perjalanan akademik yang membentuk fondasi keahlian.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">Sarjana Akuntansi (S.Ak)</div>
+          <h3>Sarjana Akuntansi (S.Ak)</h3>
+          <div class="org">Universitas Jenderal Achmad Yani Yogyakarta</div>
+          <div class="detail">Fakultas Ekonomi dan Sosial — Program Studi Akuntansi • NPM: 222301045 • Angkatan 2022 • IPK: Data belum tersedia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" style="background:var(--gray-50)">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Pengalaman</div>
+      <h2 class="section-title">Pengalaman Kerja</h2>
+      <p class="section-subtitle">Pengalaman praktis di bidang akuntansi dan layanan pelanggan.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">Juli 2025 — Agustus 2025 (2 Bulan)</div>
+          <h3>Intern — Accounting Department</h3>
+          <div class="org">PT Syncore Indonesia</div>
+          <div class="detail">Menyelesaikan tugas-tugas akuntansi selama masa magang di departemen Accounting. Nomor Sertifikat: 040/SYNCORE/VIII/2025.</div>
+          <a class="experience-proof" href="cv_render/sertifikat%20magang%20syncore.png" target="_blank" rel="noopener noreferrer">📜 Lihat bukti magang</a>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">Januari 2025 — Agustus 2026</div>
+          <h3>Pemilik Toko Online</h3>
+          <div class="org">Bayiku Store</div>
+          <div class="detail">Mengelola operasional toko online, administrasi pesanan, komunikasi dengan pelanggan, serta mendukung pencatatan dan pengelolaan transaksi penjualan.</div>
+          <a class="experience-proof" href="https://id.shp.ee/uWzQde9n" target="_blank" rel="noopener noreferrer">🛒 Kunjungi toko Bayiku Store</a>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">24 Januari 2024 — 18 Januari 2025 (12 Bulan)</div>
+          <h3>Crew</h3>
+          <div class="org">Burger King Malioboro (PT Sari Burger Indonesia)</div>
+          <div class="detail">Customer service, penanganan kas, dan pengelolaan pesanan pelanggan. ID Karyawan: 24003202 • Surat Keterangan: TRM/10/02/001471.</div>
+          <a class="experience-proof" href="cv_render/Surat%20Keterangan%20Karyawan%20BK.png" target="_blank" rel="noopener noreferrer">📜 Lihat surat keterangan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Sertifikasi</div>
+      <h2 class="section-title">Sertifikasi &amp; Pelatihan</h2>
+      <p class="section-subtitle">Sertifikasi profesional yang menunjang kompetensi di bidang perpajakan dan akuntansi.</p>
+    </div>
+    <div class="cert-filter reveal" role="tablist" aria-label="Filter sertifikasi">
+      <button class="cert-filter-btn active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+      <button class="cert-filter-btn" data-filter="tax" role="tab" aria-selected="false">Perpajakan</button>
+      <button class="cert-filter-btn" data-filter="accounting" role="tab" aria-selected="false">Akuntansi</button>
+      <button class="cert-filter-btn" data-filter="technology" role="tab" aria-selected="false">Teknologi</button>
+    </div>
+    <div class="cert-grid" id="certGrid">
+      <div class="cert-card reveal reveal-delay-1" data-category="tax">
+        <span class="cert-badge">Perpajakan</span>
+        <h3>Brevet Pajak A &amp; B</h3>
+        <div class="cert-institution">Biinspira Institute / Bina Muda Inspira Training Center</div>
+        <div class="cert-details">
+          <div class="cert-detail"><strong>Periode:</strong> 07 Juli — 06 Agustus 2026</div>
+          <div class="cert-detail"><strong>Status:</strong> Lulus</div>
+          <div class="cert-detail"><strong>No:</strong> 06104/BMI-BP32/VIII/2026</div>
+        </div>
+        <div class="cert-subjects">
+          <h4>Materi yang Dikuasai</h4>
+          <div class="cert-subject-tags">
+            <span class="cert-subject-tag">Pajak Penghasilan Orang Pribadi</span>
+            <span class="cert-subject-tag">Pajak Penghasilan Badan</span>
+            <span class="cert-subject-tag">PPh Pasal 21, 22, 23, 15, 4(2)</span>
+            <span class="cert-subject-tag">KUP</span>
+            <span class="cert-subject-tag">PBB &amp; BPHTB</span>
+            <span class="cert-subject-tag">PPN</span>
+            <span class="cert-subject-tag">Pemeriksaan</span>
+            <span class="cert-subject-tag">Keberatan &amp; Banding</span>
+            <span class="cert-subject-tag">Akuntansi Perpajakan</span>
+          </div>
+        </div>
+        <a class="experience-proof" href="cv_render/SERTIFIKAT%20Pelatihan%20Brevet%20Pajak%20A%26B.png" target="_blank" rel="noopener noreferrer">📜 Lihat bukti sertifikat</a>
+      </div>
+      <div class="cert-card reveal reveal-delay-2" data-category="accounting">
+        <span class="cert-badge">Akuntansi</span>
+        <h3>Financial Statement Analyst</h3>
+        <div class="cert-institution">PT Malakah Edukasi Indonesia</div>
+        <div class="cert-details">
+          <div class="cert-detail"><strong>Tanggal:</strong> 4 Juli 2026</div>
+          <div class="cert-detail"><strong>No:</strong> MALAKAH/2832ca/31102025/7747</div>
+        </div>
+        <div class="cert-subjects">
+          <h4>Kompetensi yang Dikembangkan</h4>
+          <div class="cert-subject-tags">
+            <span class="cert-subject-tag">Akuntansi Keuangan</span>
+            <span class="cert-subject-tag">Financial Reporting</span>
+            <span class="cert-subject-tag">Financial Statement Analysis</span>
+            <span class="cert-subject-tag">Cost Accounting</span>
+          </div>
+        </div>
+        <a class="experience-proof" href="Financial_Statement_Analyst.jpg.jpeg" target="_blank" rel="noopener noreferrer">📜 Lihat bukti sertifikat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Organization -->
+<section id="organization" style="background:var(--gray-50)">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Keorganisasian</div>
+      <h2 class="section-title">Keterlibatan Organisasi</h2>
+      <p class="section-subtitle">Pengalaman kepemimpinan, koordinasi, dan kepanitiaan di KSBI, BEM UNJAYA, dan HIMAK.</p>
+    </div>
+    <div class="org-timeline reveal">
+      <div class="org-item chairman">
+        <div class="org-year">18 Nov 2024</div>
+        <div class="org-content">
+          <span class="role-tag">Ketua KSBI</span>
+          <h4>Ketua KSBI Universitas Jenderal Achmad Yani Yogyakarta</h4>
+          <p>Mengkoordinasikan seluruh kegiatan KSBI, termasuk kunjungan industri ke Wadaslintang pada 2024 untuk memberikan penyuluhan dan bincang-bincang mengenai perkembangan usaha. Surat Penghargaan tertanggal 18 November 2024.</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">2023–2024</div>
+        <div class="org-content">
+          <span class="role-tag">Departemen Akademik</span>
+          <h4>KSBI Universitas Jenderal Achmad Yani Yogyakarta</h4>
+          <p>Memberikan arahan dan masukan kepada UMKM dalam kegiatan pembinaan usaha.</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">2024</div>
+        <div class="org-content">
+          <span class="role-tag">Koordinator</span>
+          <h4>Welcoming Fakultas Ekonomi dan Sosial — BEM UNJAYA</h4>
+          <p>Mengkoordinasikan kegiatan Welcoming Fakultas Ekonomi dan Sosial.</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">2023</div>
+        <div class="org-content">
+          <span class="role-tag">Kontributor</span>
+          <h4>Rekrutmen Panitia Bina Usaha — HIMAK</h4>
+          <p>Berkontribusi dalam proses rekrutmen panitia kegiatan Bina Usaha.</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">21–29 Okt 2023</div>
+        <div class="org-content">
+          <span class="role-tag">Panitia</span>
+          <h4>Pekan Olahraga Bersama (POB)</h4>
+          <p>Berpartisipasi sebagai panitia dalam pelaksanaan kegiatan POB.</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">2023</div>
+        <div class="org-content">
+          <span class="role-tag">Panitia</span>
+          <h4>Seminar Entrepreneur</h4>
+          <p>"Mengembangkan Ide Bisnis Yang Unik dan Inovatif dalam Menghadapi Era Disrupsi" — 2 Desember 2023</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">2023</div>
+        <div class="org-content">
+          <span class="role-tag">Panitia</span>
+          <h4>Lomba Foto Produk UMKM</h4>
+          <p>"Peningkatan Nilai Jual dengan Produk Kreatif dan Inovatif" — 10-31 Agustus 2023</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">2023</div>
+        <div class="org-content">
+          <span class="role-tag">Panitia</span>
+          <h4>Bina Usaha</h4>
+          <p>"Manajemen Keuangan Usaha Untuk Menumbuhkan Good Money Habit" — 24 Juni 2023</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">2023</div>
+        <div class="org-content">
+          <span class="role-tag">Panitia</span>
+          <h4>Podcast Kewirausahaan</h4>
+          <p>"Membangun Mindset Enterpreneur" — 10 Juni 2023</p>
+        </div>
+      </div>
+      <div class="org-item">
+        <div class="org-year">2023</div>
+        <div class="org-content">
+          <span class="role-tag">Panitia</span>
+          <h4>Podcast Kewirausahaan</h4>
+          <p>"Bincang Seputar Bisnis Dan Kewirausahaan: Dari Hobi Jadi Bisnis" — 27 Mei 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements & Webinars -->
+<section id="achievements">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Pencapaian</div>
+      <h2 class="section-title">Pencapaian &amp; Partisipasi</h2>
+      <p class="section-subtitle">Partisipasi aktif dalam seminar dan webinar untuk pengembangan keahlian.</p>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal reveal-delay-1">
+        <div class="ach-icon">🏆</div>
+        <h4>Ketua KSBI Unjaya</h4>
+        <p>Organisasi: KSBI Unjaya. Surat penghargaan tertanggal 18 November 2024.</p>
+        <a class="experience-proof" href="cv_render/sertif_KSBI_2024.png" target="_blank" rel="noopener noreferrer">📜 Lihat bukti pencapaian</a>
+      </div>
+      <div class="achievement-card reveal reveal-delay-2">
+        <div class="ach-icon">📜</div>
+        <h4>Brevet Pajak A &amp; B</h4>
+        <p>Biinspira Institute — 07 Juli–06 Agustus 2026. No: 06104/BMI-BP32/VIII/2026.</p>
+        <a class="experience-proof" href="cv_render/SERTIFIKAT%20Pelatihan%20Brevet%20Pajak%20A%26B.png" target="_blank" rel="noopener noreferrer">📜 Lihat bukti sertifikat</a>
+      </div>
+      <div class="achievement-card reveal reveal-delay-3">
+        <div class="ach-icon">📋</div>
+        <h4>Financial Statement Analyst</h4>
+        <p>PT Malakah Edukasi Indonesia — 4 Juli 2026. No: MALAKAH/2832ca/31102025/7747. Kompetensi: akuntansi keuangan, financial reporting, financial statement analysis, dan cost accounting.</p>
+        <a class="experience-proof" href="Financial_Statement_Analyst.jpg.jpeg" target="_blank" rel="noopener noreferrer">📜 Lihat bukti sertifikat</a>
+      </div>
+      <div class="achievement-card reveal reveal-delay-4">
+        <div class="ach-icon">🎤</div>
+        <h4>Partisipasi Kegiatan KSBI</h4>
+        <p>Panitia dalam lima kegiatan: dua podcast kewirausahaan, Bina Usaha, Lomba Foto Produk UMKM, dan Seminar Entrepreneur pada 2023.</p>
+        <a class="experience-proof" href="cv_render/sertif_panitia_KSBI.png" target="_blank" rel="noopener noreferrer">📜 Lihat bukti partisipasi</a>
+      </div>
+      <div class="achievement-card reveal reveal-delay-1">
+        <div class="ach-icon">📚</div>
+        <h4>Webinar Nasional Perpajakan</h4>
+        <p>“Prospek Penerimaan Pajak Indonesia Tahun 2024: Ketidakpastian Ekonomi Global” — Program Studi Akuntansi FES UNJAYA, 31 Juli 2023.</p>
+        <a class="experience-proof" href="sertif_pesertawebinarnasional_pajak.pdf" target="_blank" rel="noopener noreferrer">📜 Lihat bukti partisipasi</a>
+      </div>
+      <div class="achievement-card reveal reveal-delay-2">
+        <div class="ach-icon">📖</div>
+        <h4>Webinar Ilmu Akuntansi</h4>
+        <p>“Ilusi Atau Nyata? Hilangnya Profesi Akuntansi” — HIMAKS UNJAYA, 31 Januari 2023.</p>
+        <a class="experience-proof" href="cv_render/sertif%20peserta%20webinar%20ilmu%20akuntansi.png" target="_blank" rel="noopener noreferrer">📜 Lihat bukti partisipasi</a>
+      </div>
+      <div class="achievement-card reveal reveal-delay-3">
+        <div class="ach-icon">📈</div>
+        <h4>Webinar Investasi Nasional</h4>
+        <p>“Sukses Investasi Saham dengan Pemanfaatan Teknologi Informasi untuk Keuntungan Optimal” — KSPM UNJAYA, 11 November 2023.</p>
+        <a class="experience-proof" href="sertif_pesertawebiarinvetasinasional_KSPM.png" target="_blank" rel="noopener noreferrer">📜 Lihat bukti partisipasi</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Career Target -->
+<section id="career-target" style="background:var(--gray-50)">
+  <div class="section-inner">
+    <div class="career-target reveal">
+      <div class="section-label" style="display:inline-block;margin-bottom:1rem">Tujuan Karier</div>
+      <h2>Target Karier</h2>
+      <p class="subtitle">Arah pengembangan profesional yang dituju.</p>
+      <div class="career-goals">
+        <div class="goal-card reveal reveal-delay-1">
+          <div class="goal-icon">📊</div>
+          <h4>Akuntan Profesional</h4>
+          <p>Membangun fondasi kuat dalam pelaporan, analisis, dan pengelolaan keuangan.</p>
+        </div>
+        <div class="goal-card reveal reveal-delay-2">
+          <div class="goal-icon">🏛️</div>
+          <h4>Konsultan Pajak</h4>
+          <p>Mendalami kepatuhan pajak, pemeriksaan, serta penyelesaian keberatan dan banding.</p>
+        </div>
+        <div class="goal-card reveal reveal-delay-3">
+          <div class="goal-icon">💼</div>
+          <h4>Profesional Keuangan</h4>
+          <p>Mengembangkan kemampuan analitis untuk mendukung keputusan bisnis dan keuangan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Kontak</div>
+      <h2 class="section-title">Hubungi Saya</h2>
+      <p class="section-subtitle">Siap untuk berdiskusi mengenai peluang kerja dan kerja sama profesional.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:bnnanton9@gmail.com">bnnanton9@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📱</div>
+        <div>
+          <h4>Telepon</h4>
+          <p><a href="tel:+6288239674022">088239674022</a></p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🔗</div>
+        <div>
+          <h4>LinkedIn</h4>
+          <p><a href="https://www.linkedin.com/in/anton-riyadi-92aaa33b4/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">anton-riyadi-92aaa33b4</a></p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <div>
+          <h4>Lokasi</h4>
+          <p>Srengseng, Kembangan, Kota Adm. Jakarta Barat, DKI Jakarta</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-line"></div>
+  <p>&copy; 2026 Anton Riyadi, S.Ak — All rights reserved.</p>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+<script>
+(function(){
+  // Theme Toggle
+  const html=document.documentElement;
+  const themeToggle=document.getElementById('themeToggle');
+  const savedTheme=localStorage.getItem('theme')||'light';
+  html.setAttribute('data-theme',savedTheme);
+  themeToggle.textContent=savedTheme==='dark'?'🌙':'☀️';
+  themeToggle.addEventListener('click',function(){
+    const current=html.getAttribute('data-theme');
+    const next=current==='dark'?'light':'dark';
+    html.setAttribute('data-theme',next);
+    localStorage.setItem('theme',next);
+    this.textContent=next==='dark'?'🌙':'☀️';
+  });
+
+  // Navbar scroll
+  const navbar=document.getElementById('navbar');
+  const backToTop=document.getElementById('backToTop');
+  const scrollProgress=document.getElementById('scrollProgress');
+  function updateScroll(){
+    const st=window.scrollY;
+    navbar.classList.toggle('scrolled',st>50);
+    backToTop.classList.toggle('visible',st>400);
+    const h=document.documentElement.scrollHeight-window.innerHeight;
+    const pct=h>0?(st/h)*100:0;
+    scrollProgress.style.width=pct+'%';
+  }
+  window.addEventListener('scroll',updateScroll,{passive:true});
+  updateScroll();
+
+  // Back to top
+  backToTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+  // Hamburger
+  const hamburger=document.getElementById('hamburger');
+  const mobileMenu=document.getElementById('mobileMenu');
+  hamburger.addEventListener('click',function(){
+    const isOpen=mobileMenu.classList.toggle('show');
+    hamburger.classList.toggle('active',isOpen);
+    hamburger.setAttribute('aria-expanded',isOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      mobileMenu.classList.remove('show');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded','false');
+    });
+  });
+
+  // Active nav link
+  const sections=document.querySelectorAll('section[id]');
+  const navLinks=document.querySelectorAll('.nav-links a[href^="#"],.mobile-menu a[href^="#"]');
+  function updateActive(){
+    let current='';
+    sections.forEach(function(s){
+      const top=s.offsetTop-120;
+      if(window.scrollY>=top) current=s.getAttribute('id');
+    });
+    navLinks.forEach(function(a){
+      a.classList.toggle('active',a.getAttribute('href')==='#'+current);
+    });
+  }
+  window.addEventListener('scroll',updateActive,{passive:true});
+  updateActive();
+
+  // Scroll Reveal
+  const revealEls=document.querySelectorAll('.reveal');
+  const revealObserver=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');revealObserver.unobserve(e.target)}
+    });
+  },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+  revealEls.forEach(function(el){revealObserver.observe(el)});
+
+  // Hero slideshow
+  const slides=document.querySelectorAll('.hero-slide');
+  const slideDots=document.querySelectorAll('.hero-dot');
+  let slideIndex=0;
+  function renderSlide(index){
+    slides.forEach(function(slide, i){
+      slide.classList.toggle('active', i===index);
+    });
+    slideDots.forEach(function(dot, i){
+      dot.classList.toggle('active', i===index);
+    });
+  }
+  setInterval(function(){
+    slideIndex=(slideIndex+1)%slides.length;
+    renderSlide(slideIndex);
+  },3500);
+  slideDots.forEach(function(dot, index){
+    dot.addEventListener('click', function(){
+      slideIndex=index;
+      renderSlide(slideIndex);
+    });
+  });
+
+  // Cert Filter
+  const filterBtns=document.querySelectorAll('.cert-filter-btn');
+  const certCards=document.querySelectorAll('.cert-card');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      filterBtns.forEach(function(b){b.classList.remove('active');b.setAttribute('aria-selected','false')});
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      const filter=btn.getAttribute('data-filter');
+      certCards.forEach(function(card){
+        if(filter==='all'||card.getAttribute('data-category')===filter){
+          card.style.display='';card.style.opacity='1';card.style.transform='scale(1)';
+        }else{
+          card.style.display='none';
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
