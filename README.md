@@ -2,7 +2,7 @@
 
 ## Bukti Magang
 
-![Sertifikat Magang](./sertifikat-magang.png)
+![Sertifikat Magang](./sertifikat%20magang%20syncore_page-0001.jpg)
 
 **Nama:** Anton Riyadi  
 **Perusahaan:** PT Syncore Indonesia  
