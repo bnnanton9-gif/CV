@@ -63,28 +63,28 @@ body{font-family:var(--font-sans);background:var(--off-white);color:var(--gray-7
 .mobile-menu a:hover,.mobile-menu a.active{color:var(--gold)}
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 2rem 4rem}
 .hero-slider{position:absolute;inset:0;overflow:hidden}
-.hero-slide{position:absolute;inset:0;opacity:0;transform:translateX(-40px);transition:opacity 1.5s cubic-bezier(0.4,0,0.2,1), transform 1.5s cubic-bezier(0.4,0,0.2,1);background-size:cover;background-position:center;filter:saturate(.95) contrast(1.02)}
+.hero-slide{position:absolute;inset:0;opacity:0;transform:translateX(-40px);transition:opacity 1.5s cubic-bezier(0.4,0,0.2,1), transform 1.5s cubic-bezier(0.4,0,0.2,1);background-size:cover;background-position:center}
 .hero-slide.active{opacity:1;transform:translateX(0)}
-.hero-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(16,42,67,.97) 0%,rgba(22,59,80,.91) 48%,rgba(47,127,130,.48) 100%),linear-gradient(rgba(255,255,255,.08),rgba(255,255,255,.02));}
+.hero-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(16,42,67,.97) 0%,rgba(22,59,80,.91) 48%,rgba(47,127,130,.48) 100%),linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.05));}
 .hero-dots{position:absolute;left:50%;bottom:1.5rem;transform:translateX(-50%);display:flex;gap:.55rem;z-index:2}
 .hero-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.42);border:none;cursor:pointer;transition:var(--transition)}
 .hero-dot.active{background:var(--gold);transform:scale(1.15)}
 .hero-inner{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .hero-content{flex:1 1 620px;max-width:620px}
 .hero-photo{flex:0 0 380px;display:flex;justify-content:flex-end;align-items:center;position:relative;z-index:1}
-.portrait-frame{position:relative;display:flex;align-items:center;justify-content:center;padding:18px;border-radius:50%;background:linear-gradient(135deg,rgba(200,168,78,.35),rgba(255,255,255,.06));border:1px solid rgba(200,168,78,.28)}
+.portrait-frame{position:relative;display:flex;align-items:center;justify-content:center;padding:18px;border-radius:50%;background:linear-gradient(135deg,rgba(200,168,78,.35),rgba(255,255,255,.06));box-shadow:0 30px 80px rgba(0,0,0,.25);border:1px solid rgba(213,173,99,.28)}
 .portrait-frame::before{content:'';position:absolute;inset:-14px;border:1px solid rgba(200,168,78,.28);border-radius:50%}
 .hero-photo img{width:310px;height:310px;object-fit:cover;object-position:center 18%;border-radius:50%;border:4px solid var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.3);transition:var(--transition)}
 .hero-photo img:hover{transform:scale(1.02)}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(47,127,130,.2);border:1.5px solid rgba(213,173,99,.45);color:var(--gold-light);padding:.5rem 1.25rem;border-radius:4px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(47,127,130,.2);border:1.5px solid rgba(213,173,99,.45);color:var(--gold-light);padding:.5rem 1.25rem;border-radius:4px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
 .hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-.hero h1{font-family:var(--font);font-size:clamp(2.5rem,5vw,4.2rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:.75rem;letter-spacing:-.02em;text-shadow:0 2px 20px rgba(0,0,0,.18)}
+.hero h1{font-family:var(--font);font-size:clamp(2.5rem,5vw,4.2rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:.75rem;letter-spacing:-.02em;text-shadow:0 2px 20px rgba(0,0,0,.25)}
 .hero h1 .accent{color:var(--gold);position:relative}
 .hero .subtitle{font-size:clamp(1rem,2vw,1.35rem);color:rgba(255,255,255,.88);font-weight:400;margin-bottom:1rem;max-width:600px;text-shadow:0 1px 10px rgba(0,0,0,.3)}
 .hero .hero-desc{font-size:1rem;color:rgba(255,255,255,.80);max-width:620px;margin-bottom:2.5rem;line-height:1.8;text-shadow:0 1px 8px rgba(0,0,0,.2)}
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:var(--radius-sm);font-size:.85rem;font-weight:700;text-decoration:none;transition:var(--transition);cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:var(--radius-sm);font-size:.85rem;font-weight:700;text-decoration:none;transition:var(--transition);cursor:pointer;border:none}
 .btn-primary{background:var(--gold);color:var(--navy)}
 .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 30px rgba(200,168,78,.28)}
 .btn-outline{background:rgba(255,255,255,.04);color:var(--white);border:1.5px solid rgba(255,255,255,.2)}
@@ -96,16 +96,16 @@ body{font-family:var(--font-sans);background:var(--off-white);color:var(--gray-7
 section{padding:5rem 2rem}
 .section-inner{max-width:1100px;margin:0 auto}
 .section-header{text-align:center;margin-bottom:3.5rem}
-.section-label{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--gold-dim);margin-bottom:.75rem;padding:.35rem .8rem;background:rgba(47,127,130,.08);border:1px solid rgba(200,168,78,.12);border-radius:50px}
+.section-label{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--gold-dim);margin-bottom:.75rem;padding:.35rem .8rem;background:rgba(47,127,130,.08);border:1px solid rgba(47,127,130,.18);border-radius:999px}
 .section-title{font-family:var(--font);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:var(--navy);letter-spacing:-.02em;line-height:1.2}
 [data-theme="dark"] .section-title{color:var(--gray-800)}
 .section-subtitle{color:var(--gray-500);margin-top:.75rem;font-size:1rem;max-width:550px;margin-left:auto;margin-right:auto}
 .about-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.about-card{background:linear-gradient(180deg,var(--white) 0%,rgba(47,127,130,.035) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:2rem;transition:var(--transition);position:relative;overflow:hidden}
+.about-card{background:linear-gradient(180deg,var(--white) 0%,rgba(47,127,130,.035) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:2rem;transition:var(--transition);position:relative}
 .about-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(200,168,78,.2)}
 .about-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:var(--transition);transform-origin:left}
 .about-card:hover::before{transform:scaleX(1)}
-.about-icon{width:52px;height:52px;background:rgba(200,168,78,.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1.25rem;border:1px solid rgba(200,168,78,.15)}
+.about-icon{width:52px;height:52px;background:rgba(200,168,78,.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:1.25rem;border:1px solid rgba(200,168,78,.1)}
 .about-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;letter-spacing:-.01em}
 [data-theme="dark"] .about-card h3{color:var(--gray-800)}
 .about-card p{font-size:.88rem;color:var(--gray-500);line-height:1.7}
@@ -134,18 +134,18 @@ section{padding:5rem 2rem}
 [data-theme="dark"] .timeline-card h3{color:var(--gray-800)}
 .timeline-card .org{font-size:.85rem;color:var(--gray-500);margin-bottom:.3rem}
 .timeline-card .detail{font-size:.82rem;color:var(--gray-400);margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--gray-100)}
-.experience-proof{display:inline-flex;align-items:center;gap:.35rem;margin-top:1rem;padding:.45rem .75rem;border:1px solid rgba(47,127,130,.35);border-radius:var(--radius-sm);color:var(--teal);font-size:.75rem;font-weight:600;text-decoration:none;transition:var(--transition)}
+.experience-proof{display:inline-flex;align-items:center;gap:.35rem;margin-top:1rem;padding:.45rem .75rem;border:1px solid rgba(47,127,130,.35);border-radius:var(--radius-sm);color:var(--teal);font-size:.75rem;font-weight:700;text-decoration:none;transition:var(--transition)}
 .experience-proof:hover{background:var(--teal-light);border-color:var(--teal);transform:translateY(-1px)}
 .cert-filter{display:flex;justify-content:center;gap:.5rem;margin-bottom:2.5rem;flex-wrap:wrap}
 .cert-filter-btn{background:var(--white);border:1.5px solid var(--gray-200);color:var(--gray-500);padding:.5rem 1.25rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;transition:var(--transition)}
 .cert-filter-btn:hover{border-color:var(--gold);color:var(--gold)}
 .cert-filter-btn.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
 .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
-.cert-card{background:linear-gradient(180deg,var(--white) 0%,rgba(200,168,78,.015) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.75rem;transition:var(--transition);position:relative;overflow:hidden}
+.cert-card{background:linear-gradient(180deg,var(--white) 0%,rgba(200,168,78,.015) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.75rem;transition:var(--transition);position:relative}
 .cert-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);opacity:0;transition:var(--transition)}
 .cert-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
 .cert-card:hover::after{opacity:1}
-.cert-card .cert-badge{display:inline-block;background:rgba(200,168,78,.1);color:var(--gold-dim);padding:.2rem .7rem;border-radius:50px;font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.cert-card .cert-badge{display:inline-block;background:rgba(200,168,78,.1);color:var(--gold-dim);padding:.2rem .7rem;border-radius:50px;font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.8rem}
 .cert-card h3{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:.3rem;letter-spacing:-.01em}
 [data-theme="dark"] .cert-card h3{color:var(--gray-800)}
 .cert-card .cert-institution{font-size:.88rem;color:var(--gray-500);margin-bottom:.75rem}
@@ -164,7 +164,7 @@ section{padding:5rem 2rem}
 .org-content h4{font-size:.95rem;font-weight:700;color:var(--navy);letter-spacing:-.01em}
 [data-theme="dark"] .org-content h4{color:var(--gray-800)}
 .org-content p{font-size:.82rem;color:var(--gray-500);margin-top:.15rem}
-.org-content .role-tag{display:inline-block;background:rgba(200,168,78,.12);color:var(--gold-dim);padding:.15rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.04em}
+.org-content .role-tag{display:inline-block;background:rgba(200,168,78,.12);color:var(--gold-dim);padding:.15rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.05em}
 .achievements-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .achievement-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.5rem;transition:var(--transition)}
 .achievement-card:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.2);transform:translateY(-2px)}
@@ -195,7 +195,7 @@ section{padding:5rem 2rem}
 footer{background:var(--navy);padding:3rem 2rem;text-align:center}
 footer p{color:rgba(255,255,255,.35);font-size:.8rem}
 footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1rem;border-radius:1px}
-.back-to-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--gold);color:var(--navy);border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(12px);transition:var(--transition);z-index:1002}
+.back-to-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--gold);color:var(--navy);border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(10px);transition:var(--transition);z-index:1000}
 .back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
 .back-to-top:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(200,168,78,.35)}
 .reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
@@ -354,7 +354,7 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
       <div class="hero-badge reveal">🎓 Universitas Jenderal Achmad Yani Yogyakarta</div>
       <h1 class="reveal reveal-delay-1">Anton Riyadi, <span class="accent">S.Ak</span></h1>
       <p class="subtitle reveal reveal-delay-2">Sarjana Akuntansi (S.Ak) — Universitas Jenderal Achmad Yani Yogyakarta</p>
-      <p class="hero-desc reveal reveal-delay-3">Sarjana Akuntansi dengan sertifikasi Brevet Pajak A&amp;B dan Financial Statement Analyst. Memiliki pengalaman magang akuntansi, layanan pelanggan, dan kontribusi organisasi di bidang kewirausahaan dan komunitas.</p>
+      <p class="hero-desc reveal reveal-delay-3">Sarjana Akuntansi dengan sertifikasi Brevet Pajak A&amp;B dan Financial Statement Analyst. Memiliki pengalaman magang akuntansi, layanan pelanggan, dan organisasi.</p>
       <div class="hero-actions reveal reveal-delay-4">
         <a href="Anton_Riyadi_CV.pdf.pdf" class="btn btn-primary" download>📄 Download CV</a>
         <a href="javascript:window.print()" class="btn btn-outline">🖨️ Print CV</a>
@@ -625,7 +625,7 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
         <div class="org-content">
           <span class="role-tag">Ketua KSBI</span>
           <h4>Ketua KSBI Universitas Jenderal Achmad Yani Yogyakarta</h4>
-          <p>Mengkoordinasikan seluruh kegiatan KSBI, termasuk kunjungan industri ke Wadaslintang pada 2024 untuk memberikan penyuluhan dan bincang-bincang mengenai perkembangan usaha. Surat penghargaan dan bukti kegiatan tersedia.</p>
+          <p>Mengkoordinasikan seluruh kegiatan KSBI, termasuk kunjungan industri ke Wadaslintang pada 2024 untuk memberikan penyuluhan dan bincang-bincang mengenai perkembangan usaha. Surat pengangkatan terlampir.</p>
         </div>
       </div>
       <div class="org-item">
@@ -716,7 +716,7 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
         <div class="ach-icon">🏆</div>
         <h4>Ketua KSBI Unjaya</h4>
         <p>Organisasi: KSBI Unjaya. Surat penghargaan tertanggal 18 November 2024.</p>
-        <a class="experience-proof" href="AKHIR%20MASA%20JABATAN.jpeg" target="_blank" rel="noopener noreferrer">📜 Lihat bukti pencapaian</a>
+        <a class="experience-proof" href="Sertifikat%20KSBI%202024_20241118_150913_0000_Ketua.pdf" target="_blank" rel="noopener noreferrer">📜 Lihat bukti pencapaian</a>
       </div>
       <div class="achievement-card reveal reveal-delay-2">
         <div class="ach-icon">📜</div>
