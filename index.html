@@ -40,10 +40,7 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:var(--font-sans);background:var(--off-white);color:var(--gray-700);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 ::selection{background:var(--gold);color:var(--navy)}
 
-/* Scroll Progress */
 .scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));z-index:1001;transition:width .15s ease-out;width:0}
-
-/* Navbar */
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(16,42,67,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(213,173,99,.2);transition:var(--transition)}
 .navbar.scrolled{background:rgba(16,42,67,.98);box-shadow:0 2px 20px rgba(16,42,67,.28)}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:72px}
@@ -65,13 +62,11 @@ body{font-family:var(--font-sans);background:var(--off-white);color:var(--gray-7
 .mobile-menu a{display:block;color:rgba(255,255,255,.8);text-decoration:none;padding:.75rem 0;font-size:.95rem;border-bottom:1px solid rgba(255,255,255,.06);transition:var(--transition)}
 .mobile-menu a:last-child{border:none}
 .mobile-menu a:hover,.mobile-menu a.active{color:var(--gold)}
-
-/* Hero */
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 2rem 4rem}
 .hero-slider{position:absolute;inset:0;overflow:hidden}
 .hero-slide{position:absolute;inset:0;opacity:0;transform:translateX(-40px);transition:opacity 1.5s cubic-bezier(0.4,0,0.2,1), transform 1.5s cubic-bezier(0.4,0,0.2,1);background-size:cover;background-position:center;background-repeat:no-repeat}
 .hero-slide.active{opacity:1;transform:translateX(0)}
-.hero-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(16,42,67,.97) 0%,rgba(22,59,80,.91) 48%,rgba(47,127,130,.48) 100%),linear-gradient(rgba(255,255,255,.035),rgba(255,255,255,.02))}
+.hero-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(16,42,67,.97) 0%,rgba(22,59,80,.91) 48%,rgba(47,127,130,.48) 100%),linear-gradient(rgba(255,255,255,.02),rgba(0,0,0,.35))}
 .hero-dots{position:absolute;left:50%;bottom:1.5rem;transform:translateX(-50%);display:flex;gap:.55rem;z-index:2}
 .hero-dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.42);border:none;cursor:pointer;transition:var(--transition)}
 .hero-dot.active{background:var(--gold);transform:scale(1.15)}
@@ -99,8 +94,6 @@ body{font-family:var(--font-sans);background:var(--off-white);color:var(--gray-7
 .hero-stat{text-align:left}
 .hero-stat .num{font-family:var(--font);font-size:2rem;font-weight:900;color:var(--gold-light);letter-spacing:-.02em;text-shadow:0 2px 10px rgba(0,0,0,.2)}
 .hero-stat .label{font-size:.78rem;color:rgba(255,255,255,.45);margin-top:.15rem;text-transform:uppercase;letter-spacing:.05em;font-weight:500}
-
-/* Sections */
 section{padding:5rem 2rem}
 .section-inner{max-width:1100px;margin:0 auto}
 .section-header{text-align:center;margin-bottom:3.5rem}
@@ -108,8 +101,6 @@ section{padding:5rem 2rem}
 .section-title{font-family:var(--font);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:var(--navy);letter-spacing:-.02em;line-height:1.2}
 [data-theme="dark"] .section-title{color:var(--gray-800)}
 .section-subtitle{color:var(--gray-500);margin-top:.75rem;font-size:1rem;max-width:550px;margin-left:auto;margin-right:auto}
-
-/* About */
 .about-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .about-card{background:linear-gradient(180deg,var(--white) 0%,rgba(47,127,130,.035) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:2rem;transition:var(--transition);position:relative;overflow:hidden}
 .about-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(200,168,78,.2)}
@@ -122,8 +113,6 @@ section{padding:5rem 2rem}
 .about-card ul{list-style:none;margin-top:.75rem}
 .about-card ul li{font-size:.85rem;color:var(--gray-600);padding:.35rem 0;padding-left:1.2rem;position:relative}
 .about-card ul li::before{content:'';position:absolute;left:0;top:.7rem;width:5px;height:5px;background:var(--gold);border-radius:50%}
-
-/* Skills */
 .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .skill-group{background:linear-gradient(180deg,var(--white) 0%,rgba(47,127,130,.025) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.75rem;transition:var(--transition);box-shadow:var(--shadow-sm)}
 .skill-group:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.15);transform:translateY(-2px)}
@@ -133,8 +122,6 @@ section{padding:5rem 2rem}
 .skill-tags{display:flex;flex-wrap:wrap;gap:.5rem}
 .skill-tag{background:var(--gray-100);color:var(--gray-600);padding:.45rem .9rem;border-radius:6px;font-size:.78rem;font-weight:500;border:1px solid var(--gray-200);transition:var(--transition)}
 .skill-tag:hover{background:rgba(200,168,78,.1);border-color:rgba(200,168,78,.3);color:var(--gold-dim);transform:translateY(-1px)}
-
-/* Timeline */
 .timeline{position:relative;padding-left:2.5rem}
 .timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--gold),var(--gray-300))}
 .timeline-item{position:relative;padding-bottom:2.5rem}
@@ -150,14 +137,12 @@ section{padding:5rem 2rem}
 .timeline-card .detail{font-size:.82rem;color:var(--gray-400);margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--gray-100)}
 .experience-proof{display:inline-flex;align-items:center;gap:.35rem;margin-top:1rem;padding:.45rem .75rem;border:1px solid rgba(47,127,130,.35);border-radius:var(--radius-sm);color:var(--teal);font-size:.75rem;font-weight:600;text-decoration:none;transition:var(--transition)}
 .experience-proof:hover{background:var(--teal-light);border-color:var(--teal);transform:translateY(-1px)}
-
-/* Certifications */
 .cert-filter{display:flex;justify-content:center;gap:.5rem;margin-bottom:2.5rem;flex-wrap:wrap}
 .cert-filter-btn{background:var(--white);border:1.5px solid var(--gray-200);color:var(--gray-500);padding:.5rem 1.25rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;transition:var(--transition)}
 .cert-filter-btn:hover{border-color:var(--gold);color:var(--gold)}
 .cert-filter-btn.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
 .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
-.cert-card{background:linear-gradient(180deg,var(--white) 0%,rgba(200,168,78,.015) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.75rem;transition:var(--transition);position:relative;overflow:hidden}
+.cert-card{background:linear-gradient(180deg,var(--white) 0%,rgba(200,168,78,.015) 100%);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.75rem;transition:var(--transition);position:relative;overflow:hidden;box-shadow:var(--shadow-sm)}
 .cert-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);opacity:0;transition:var(--transition)}
 .cert-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
 .cert-card:hover::after{opacity:1}
@@ -172,8 +157,6 @@ section{padding:5rem 2rem}
 .cert-card .cert-subjects h4{font-size:.75rem;font-weight:600;color:var(--gray-500);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.4rem}
 .cert-subject-tags{display:flex;flex-wrap:wrap;gap:.35rem}
 .cert-subject-tag{background:var(--gray-100);color:var(--gray-600);padding:.2rem .55rem;border-radius:4px;font-size:.7rem;font-weight:500}
-
-/* Org Section */
 .org-timeline{display:grid;grid-template-columns:1fr;gap:1rem}
 .org-item{display:flex;gap:1.25rem;align-items:flex-start;background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.25rem 1.5rem;transition:var(--transition)}
 .org-item:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.2)}
@@ -183,8 +166,6 @@ section{padding:5rem 2rem}
 [data-theme="dark"] .org-content h4{color:var(--gray-800)}
 .org-content p{font-size:.82rem;color:var(--gray-500);margin-top:.15rem}
 .org-content .role-tag{display:inline-block;background:rgba(200,168,78,.12);color:var(--gold-dim);padding:.15rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.04em}
-
-/* Achievements */
 .achievements-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .achievement-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.5rem;transition:var(--transition)}
 .achievement-card:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.2);transform:translateY(-2px)}
@@ -192,8 +173,6 @@ section{padding:5rem 2rem}
 .achievement-card h4{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.35rem}
 [data-theme="dark"] .achievement-card h4{color:var(--gray-800)}
 .achievement-card p{font-size:.82rem;color:var(--gray-500);line-height:1.6}
-
-/* Career Target */
 .career-target{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-mid) 50%,var(--navy-light) 100%);border-radius:var(--radius-lg);padding:3.5rem;position:relative;overflow:hidden}
 .career-target::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(200,168,78,.08) 0%,transparent 70%);border-radius:50%}
 .career-target h2{color:var(--white);font-size:1.8rem;font-weight:800;margin-bottom:.5rem;letter-spacing:-.02em}
@@ -204,8 +183,6 @@ section{padding:5rem 2rem}
 .goal-card .goal-icon{font-size:1.3rem;margin-bottom:.75rem}
 .goal-card h4{color:var(--white);font-size:.9rem;font-weight:700;margin-bottom:.3rem}
 .goal-card p{color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.6}
-
-/* Contact */
 .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .contact-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:1.5rem;display:flex;align-items:center;gap:1rem;transition:var(--transition)}
 .contact-card:hover{box-shadow:var(--shadow-md);border-color:rgba(200,168,78,.2);transform:translateY(-2px)}
@@ -216,23 +193,15 @@ section{padding:5rem 2rem}
 .contact-card a:hover{color:var(--teal);border-color:var(--teal)}
 [data-theme="dark"] .contact-card p{color:var(--gray-800)}
 .contact-card .unavailable{color:var(--gray-400);font-weight:400;font-style:italic;font-size:.82rem}
-
-/* Footer */
 footer{background:var(--navy);padding:3rem 2rem;text-align:center}
 footer p{color:rgba(255,255,255,.35);font-size:.8rem}
 footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1rem;border-radius:1px}
-
-/* Back to Top */
-.back-to-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--gold);color:var(--navy);border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(10px);transition:var(--transition);box-shadow:0 10px 25px rgba(200,168,78,.2)}
+.back-to-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--gold);color:var(--navy);border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(10px);transition:var(--transition);box-shadow:0 10px 25px rgba(200,168,78,.25)}
 .back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
 .back-to-top:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(200,168,78,.35)}
-
-/* Scroll Reveal */
 .reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
-
-/* Responsive */
 @media(max-width:1024px){
   .about-cards,.skills-grid,.cert-grid,.achievements-grid,.career-goals{grid-template-columns:repeat(2,1fr)}
   .hero-stats{gap:2rem}
@@ -316,11 +285,7 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
 </style>
 </head>
 <body>
-
-<!-- Scroll Progress -->
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-<!-- Navbar -->
 <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#hero" class="nav-brand" aria-label="Anton Riyadi - Home">
@@ -353,7 +318,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </nav>
 
-<!-- Hero -->
 <section class="hero" id="hero">
   <div class="hero-slider" aria-hidden="true">
     <div class="hero-slide active" style="background-image:url('222301045_FOTO_Anton%20Riyadi.jpeg');background-position:center 18%"></div>
@@ -424,7 +388,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- About -->
 <section id="about">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -465,7 +428,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Skills -->
 <section id="skills" style="background:var(--gray-50)">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -526,7 +488,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Education -->
 <section id="education">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -548,7 +509,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Experience -->
 <section id="experience" style="background:var(--gray-50)">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -564,7 +524,7 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
           <h3>Intern — Accounting Department</h3>
           <div class="org">PT Syncore Indonesia</div>
           <div class="detail">Menyelesaikan tugas-tugas akuntansi selama masa magang di departemen Accounting. Nomor Sertifikat: 040/SYNCORE/VIII/2025.</div>
-          <a class="experience-proof" href="foto%20magang(1).jpeg" target="_blank" rel="noopener noreferrer">📜 Lihat bukti magang</a>
+          <a class="experience-proof" href="sertifikat%20magang%20syncore_page-0001.jpeg" target="_blank" rel="noopener noreferrer">📜 Lihat sertifikat magang</a>
         </div>
       </div>
       <div class="timeline-item">
@@ -591,7 +551,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Certifications -->
 <section id="certifications">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -654,7 +613,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Organization -->
 <section id="organization" style="background:var(--gray-50)">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -747,7 +705,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Achievements & Webinars -->
 <section id="achievements">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -802,7 +759,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Career Target -->
 <section id="career-target" style="background:var(--gray-50)">
   <div class="section-inner">
     <div class="career-target reveal">
@@ -830,7 +786,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
   <div class="section-inner">
     <div class="section-header reveal">
@@ -871,18 +826,15 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div class="footer-line"></div>
   <p>&copy; 2026 Anton Riyadi, S.Ak — All rights reserved.</p>
 </footer>
 
-<!-- Back to Top -->
 <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
 
 <script>
 (function(){
-  // Theme Toggle
   const html=document.documentElement;
   const themeToggle=document.getElementById('themeToggle');
   const savedTheme=localStorage.getItem('theme')||'light';
@@ -896,7 +848,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
     this.textContent=next==='dark'?'🌙':'☀️';
   });
 
-  // Navbar scroll
   const navbar=document.getElementById('navbar');
   const backToTop=document.getElementById('backToTop');
   const scrollProgress=document.getElementById('scrollProgress');
@@ -911,10 +862,8 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   window.addEventListener('scroll',updateScroll,{passive:true});
   updateScroll();
 
-  // Back to top
   backToTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
 
-  // Hamburger
   const hamburger=document.getElementById('hamburger');
   const mobileMenu=document.getElementById('mobileMenu');
   hamburger.addEventListener('click',function(){
@@ -930,7 +879,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
     });
   });
 
-  // Active nav link
   const sections=document.querySelectorAll('section[id]');
   const navLinks=document.querySelectorAll('.nav-links a[href^="#"],.mobile-menu a[href^="#"]');
   function updateActive(){
@@ -946,7 +894,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   window.addEventListener('scroll',updateActive,{passive:true});
   updateActive();
 
-  // Scroll Reveal
   const revealEls=document.querySelectorAll('.reveal');
   const revealObserver=new IntersectionObserver(function(entries){
     entries.forEach(function(e){
@@ -955,7 +902,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
   },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
   revealEls.forEach(function(el){revealObserver.observe(el)});
 
-  // Hero slideshow
   const slides=document.querySelectorAll('.hero-slide');
   const slideDots=document.querySelectorAll('.hero-dot');
   let slideIndex=0;
@@ -978,7 +924,6 @@ footer .footer-line{width:40px;height:2px;background:var(--gold);margin:0 auto 1
     });
   });
 
-  // Cert Filter
   const filterBtns=document.querySelectorAll('.cert-filter-btn');
   const certCards=document.querySelectorAll('.cert-card');
   filterBtns.forEach(function(btn){
